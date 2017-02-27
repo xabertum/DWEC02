@@ -14,11 +14,15 @@ and open the template in the editor.
 	<h1>Metodo burbuja en JavaScript</h1>
  
 	<script>
+            
+        i=0;
+        j=1;
+        
 	function burbuja(miArray)
 	{
-		for (var i=1; i<miArray.length; i++)
+		while (miArray.length > 0)
 		{
-			for (var j=0; j<(miArray.length-i); j++)
+			while (miArray.length - j) > 0)
 			{
 				if (miArray [j] > miArray[j+1])
 				{
@@ -26,7 +30,9 @@ and open the template in the editor.
 					miArray[j+1] = miArray[j];
 					miArray[j] = k;
 				}
+                        j++;
 			}
+                i++;
 		}
 		return miArray;
 	}
