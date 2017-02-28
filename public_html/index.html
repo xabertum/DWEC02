@@ -20,7 +20,7 @@ and open the template in the editor.
             var i = 0;
             var j = 0;
 
-            do {
+            while (i < miArray.length); {
                 while (j < (miArray.length - i)) {
                     if (miArray [j] > miArray[j - 1]) {
                         var k = miArray[j - 1];
@@ -30,7 +30,7 @@ and open the template in the editor.
                     j++;
                 }
                 i++;
-            } while (i < miArray.length);
+            } 
 
             return miArray;
         }
