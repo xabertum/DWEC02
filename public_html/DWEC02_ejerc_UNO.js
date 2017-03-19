@@ -4,19 +4,41 @@
  * and open the template in the editor.
  */
 
+/*function bubbleSort(a)
+{
+    var swapped;
+    do {
+        swapped = false;
+        for (var i = 0; i < a.length - 1; i++) {
+            if (a[i] > a[i + 1]) {
+                var temp = a[i];
+                a[i] = a[i + 1];
+                a[i + 1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+}*/
+
 
 function burbuja(miArray)
 {
-    for (var i = 1; i < miArray.length; i++) {
-        for (var j = 0; j < (miArray.length - i); j++) {
+
+    var flag;
+    do {
+        flag = false;
+        for (var j = 0; j < (miArray.length - 1); j++) {
             if (miArray [j] > miArray[j + 1]) {
-                k = miArray[j + 1];
-                miArray[j + 1] = miArray[j];
-                miArray[j] = k;
+                var k = miArray[j];
+                miArray[j] = miArray[j + 1];
+                miArray[j + 1] = k;
+                flag = true;
             }
         }
-    }
+
+    } while (flag);
     return miArray;
+
 }
 
 miArray = Array(5, 9, 4, 7, 3, 8, 2, 1, 6);
